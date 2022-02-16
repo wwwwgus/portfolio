@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="m.css" media="all and (max-width:500px)">
+</head>
+<body>
+    <header>
+        <h3>INDIGO</h3>
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">WE ARE</a></li>
+            <li><a href="#">WORK</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+        <svg viewBox="0 0 40 40" class="menu">
+            <rect class="cls-1" x="0.5" y="0.5" width="36.56" height="8.1" rx="2.5"/>
+            <rect class="cls-1" x="0.5" y="13.17" width="36.56" height="8.1" rx="2.5"/>
+            <rect class="cls-1" x="0.5" y="25.85" width="36.56" height="8.1" rx="2.5"/>
+        </svg>
+        <svg viewBox="0 0 40 40" class="close">
+            <rect class="cls-1" x="3.34" y="18.28" width="43.32" height="7.6" rx="3" transform="translate(-16.53 18.82) rotate(-45)"/>
+            <rect class="cls-1" x="3.34" y="18.28" width="43.32" height="7.6" rx="3" transform="translate(18.82 50.05) rotate(-135)"/>
+        </svg>
+    </header>
+    <figure></figure>
+    <main>
+        <ul>
+            <li>WE ARE</li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit perspiciatis magnam temporibus rem, delectus minus.</li>
+            <li>
+                <p><img src="indigo_images/images/promo01.png" alt="home"></p>
+                <p>HOME</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+            <li>
+                <p><img src="indigo_images/images/promo02.png" alt="home"></p>
+                <P>WE ARE</P>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+            <li>
+                <p><img src="indigo_images/images/promo03.png" alt="home"></p>
+                <P>WORK</P>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+            <li>
+                <p><img src="indigo_images/images/promo04.png" alt="home"></p>
+                <P>BLOG</P>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </li>
+        </ul>
+    </main>
+    <aside>
+        <p>WORK</p>
+        <ul>
+            <li><img src="indigo_images/images/work01.jpg" alt="work"></li>
+            <li><img src="indigo_images/images/work02.jpg" alt="work"></li>
+            <li><img src="indigo_images/images/work03.jpg" alt="work"></li>
+            <li><img src="indigo_images/images/work04.jpg" alt="work"></li>
+            <li><img src="indigo_images/images/work05.jpg" alt="work"></li>
+            <li><img src="indigo_images/images/work06.jpg" alt="work"></li>
+            <li><img src="indigo_images/images/work07.jpg" alt="work"></li>
+            <li><img src="indigo_images/images/work08.jpg" alt="work"></li>
+        </ul>
+    </aside>
+    <section>
+        <div class="blog">BLOG</div>
+        <div class="content">
+            <ul>
+                <li>
+                    <img src="indigo_images/images/blog01.jpg" alt="blog">
+                    <p>oct 30,2016</p>
+                    <p>Lorem ipsum dolor sit amet.</p> 
+                </li>
+                <li>
+                    <img src="indigo_images/images/blog02.jpg" alt="blog">
+                    <p>oct 30,2016</p>
+                    <p>Lorem ipsum dolor sit amet.</p> 
+                </li>
+                <li>
+                    <img src="indigo_images/images/blog03.jpg" alt="blog">
+                    <p>oct 30,2016</p>
+                    <p>Lorem ipsum dolor sit amet.</p> 
+                </li>
+            </ul>
+        </div>
+    </section>
+    <article>
+        <div class="contact">CONTACT</div>
+        <div class="contact2">
+            <div>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Phone">
+                <input type="text" placeholder="Email Address">
+            </div>
+            <div>
+                <textarea cols="30" rows="10">Message</textarea>
+                <button>SEND MASSAGE</button>
+            </div>
+        </div>
+    </article>
+    <footer>INDIGO</footer>
+
+    <script>
+        document.querySelector('header .menu').addEventListener('click' , function(){
+            document.querySelector('header ul').style.right = '0';
+            document.querySelector('header .close').style.display = "block";
+        });
+        document.querySelector('header .close').addEventListener('click' , function(){
+            document.querySelector('header ul').style.right = '-100%';
+            document.querySelector('header .close').style.display = "none";
+        });
+
+        window.addEventListener('resize' , function(){
+            var wd = screen.width;
+            // console.log(wd);
+            if( 500 <= wd){
+                document.querySelector('header .close').style.display = "none";
+                document.querySelector('header ul').style.right = '0';
+            }
+            else{
+                document.querySelector('header ul').style.right = '-100%';
+            }
+        });
+    </script>
+</body>
+</html>

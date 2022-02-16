@@ -1,0 +1,52 @@
+header ul{
+    position: fixed;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    right: -100%;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    transition: all 0.5s;
+}
+header li{ line-height: 20vh; height: 20vh;}
+header .menu{
+    position: absolute;
+    width: 6%;
+    right: 0;
+    top: 25%;
+    display: block;
+}
+header .close{
+    position: absolute;
+    width: 6%;
+    left: 0;
+    top: 25%;
+    z-index: 6;
+    display: none;
+}
+.cls-1{fill:#4251b6;}
+figure{ height: 20vh;}
+main li:nth-child(1){ flex: 1 1 100%; text-align: center; line-height: 3vh; margin-top: 10%;}
+main li:nth-child(2){ flex: 1 1 100%; text-align: center;}
+main li:nth-child(2)::before{ width: 0;}
+main li:nth-child(3){ flex: 1 1 100%;}
+main li:nth-child(4){ flex: 1 1 100%;}
+main li:nth-child(5){ flex: 1 1 100%;}
+aside p{ text-align: center;}
+aside p::before{ width: 0;}
+aside li{ flex: 1 1 100%;}
+section::before{ width: 0;}
+section .blog{ flex: 1 1 100%; text-align: center;}
+section .content{ flex: 1 1 100%;}
+.content ul{ flex-wrap: wrap;}
+.content li{ flex: 1 1 100%;}
+.content li img{ width: 100%; height: 35vh;}
+article{ flex-wrap: wrap; width: 100%;}
+article .contact{
+    flex: 1 1 100%;
+    text-align: center;
+}
+article .contact2{ flex: 1 1 100%; flex-wrap: wrap;}
+.contact2 div:nth-child(2){ width: 100%;}
+.contact2 button{ width: 30%; height: 5vh; margin-left: 60%;}

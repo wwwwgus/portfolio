@@ -1,0 +1,67 @@
+.wrap>aside{
+    width: 100%;
+}
+.wrap>main{
+    width: 100%;
+}
+aside>ul{
+    width: 100%;
+    transform: translateY(0);
+    margin-top: 0;
+}
+aside>ul>li:nth-child(1){
+    width: 15%;
+    height: 5vh;
+    float: left;
+    background-size: 26%;
+}
+aside>ul>li:nth-child(2){
+    width: 15%;
+    height: 5vh;
+    float: left;
+}
+aside>ul>li:nth-child(3){
+    width: 15%;
+    height: 5vh;
+    float: left;
+}
+aside>ul>li:nth-child(4){
+    width: 15%;
+    height: 5vh;
+    float: left;
+}
+aside>ul>li:nth-child(5){
+    width: 15%;
+    height: 5vh;
+    float: left;
+}
+aside>ul>li:nth-child(6){
+    width: 25%;
+    height: 5vh;
+    float: left;
+}
+aside>ul>li:nth-child(6)>p:nth-child(2)>img{
+    width: 9%;
+}
+main>ul>li:nth-child(1)>p{
+    line-height: 44px;
+}
+main>ul>li:nth-child(2){
+    width: 100%;
+    height: 41vh;
+    float: none;
+}
+main>ul>li:nth-child(3){
+    width: 100%;
+}
+main>ul>li:nth-child(3)>div:nth-child(2)>p:nth-child(2){
+    background: url(travel_img/pic2.jpg) center/cover;
+}
+main>ul>li:nth-child(4),
+main>ul>li:nth-child(5),
+main>ul>li:nth-child(6),
+main>ul>li:nth-child(7),
+main>ul>li:nth-child(8),
+main>ul>li:nth-child(9),
+main>ul>li:nth-child(10),
+main>ul>li:nth-child(11){ width: 50%;}

@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap');
+*{margin: 0; padding: 0; box-sizing: border-box; font-family: 'Nanum Gothic', sans-serif;}
+body{
+    font-size: 1.2vw;
+}
+a:link,a:visited{ text-decoration: none; color: #333;}
+ul{ list-style: none;}
+
+.wrap{
+    width: 100%;
+}
+.wrap>aside{
+    width: 20%;
+    float: left;
+}
+.wrap>main{
+    width: 80%;
+    float: left;
+}
+
+aside>ul{
+    width: 90%;
+    margin: auto;
+    position: relative;
+    transform: translateY(50%);
+    margin-top: -25%;
+}
+aside>ul>li:nth-child(1){
+    width: 100%;
+    height: 20vh;
+    background: url(travel_img/logo1.png) no-repeat;
+    background-size: 70%;
+    background-position: center;
+}
+aside>ul>li:nth-child(2),
+aside>ul>li:nth-child(3),
+aside>ul>li:nth-child(4),
+aside>ul>li:nth-child(5){
+    width: 100%;
+    height: 10vh;
+    font: bold 1.2em/60px '돋움';
+    text-align: center;
+}
+aside>ul>li:last-child>p{
+    width: 100%;
+    text-align: center;
+}
+main>ul{ width: 100%;}
+main>ul>li:nth-child(1){
+    width: 100%;
+    float: left;
+    height: 5vh;
+    background-color: black;
+    color: white;
+}
+main>ul>li:nth-child(1)>p{
+    float: left;
+    height: 5vh;
+    font-size: 0.9em;
+}
+main>ul>li:nth-child(1)>p:nth-child(1){ width: 20%; padding-left: 5px;}
+main>ul>li:nth-child(1)>p:nth-child(2){ width: 10%; height: 58%;}
+main>ul>li:nth-child(1)>p:nth-child(2)>select{
+    width: 100%;
+    height: 80%;
+    background-color: black;
+    color: white;
+    font-size: 0.9em;
+}
+main>ul>li:nth-child(1)>p:nth-child(3){ width: 58%; text-align: right;}
+main>ul>li:nth-child(1)>p:nth-child(4){ width: 12%; text-align: right;}
+main>ul>li:nth-child(2){
+    width: 51%;
+    height: 45vh;
+    background: url(travel_img/pic1.jpg) bottom/cover;
+    position: relative;
+    overflow: hidden;
+    float: left;
+}
+main>ul>li:nth-child(2)>p{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    font-size: 4em;
+    color: white;
+}
+main>ul>li:nth-child(3){
+    width: 49%;
+    height: 45vh;
+    float: left;
+}
+main>ul>li:nth-child(3)>div{
+    width: 100%;
+    height: 50%;
+}
+main>ul>li:nth-child(3)>div>p{
+    font-size: 0.8em;
+}
+main>ul>li:nth-child(3)>div:nth-child(1)>p{
+    line-height: 3em;
+    padding-left: 5px;
+    font-weight: bold;
+}
+main>ul>li:nth-child(3)>div:nth-child(1)>p:nth-child(1){
+    font-size: 2em;
+}
+main>ul>li:nth-child(3)>div:nth-child(2)>p:nth-child(1){
+    width: 50%;
+    height: 100%;
+    background-color: lightblue;
+    padding-left: 5px;
+    float: left;
+}
+main>ul>li:nth-child(3)>div:nth-child(2)>p:nth-child(2){
+    width: 50%;
+    height: 100%;
+    background: url(travel_img/pic2.jpg) top/cover;
+    float: left;
+}
+main>ul>li:nth-child(4){
+    float: left;
+    width: 21.6%;
+    height: 25vh;
+    background: url(travel_img/pic3.jpg) top/cover;
+}
+main>ul>li:nth-child(5){
+    float: left;
+    width: 35%;
+    height: 25vh;
+    background: lightcyan;
+}
+main>ul>li:nth-child(6){
+    float: left;
+    width: 21.7%;
+    height: 25vh;
+    background: url(travel_img/pic4.jpg) top/cover;
+}
+main>ul>li:nth-child(7){
+    float: left;
+    width: 21.6%;
+    height: 25vh;
+    background: url(travel_img/pic5.jpg) top/cover;
+}
+main>ul>li:nth-child(8){
+    float: left;
+    width: 21.6%;
+    height: 25vh;
+    background: url(travel_img/pic6.jpg) top/cover;
+}
+main>ul>li:nth-child(9){
+    float: left;
+    width: 21.6%;
+    height: 25vh;
+    background: lightseagreen;
+}
+main>ul>li:nth-child(10){
+    float: left;
+    width: 35%;
+    height: 25vh;
+    background: url(travel_img/pic7.jpg) top/cover;
+}
+main>ul>li:nth-child(11){
+    float: left;
+    width: 21.7%;
+    height: 25vh;
+    background: lightskyblue;
+}

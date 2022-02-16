@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&family=PT+Serif:ital@1&display=swap');
+*{margin: 0; padding: 0;}
+ul{ list-style: none;}
+a:link , a:visited{ text-decoration: none; color: #333;}
+
+.wrap{
+    width: 100%;
+    /* height: 500vh; */
+}
+.wrap section{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+nav{ width: 100%; background-color: rgb(117,208,177);
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+}
+nav ul{
+    width: 90%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+nav li{
+    flex: 0 1 33.3%;
+    font-size: 33px;
+    text-align: center;
+}
+nav a:link , nav a:visited{ color: white; font-family: 'Abril Fatface', cursive;}
+
+
+#works{
+    width: 90%;
+    margin: auto;
+}
+#works ul{ display: flex; flex-wrap: wrap;}
+#works ul li{
+    flex: 1 1 20%;
+    margin-left: 2%;
+    margin-top: 15%;
+    position: relative;
+}
+#works ul li::before{
+    content: 'photoshop';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    height: 0;
+    background-color: rgba(186, 231, 216);
+    color: white;
+    font-size: 40px;
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    transform-origin: bottom;
+}
+#works li:nth-child(2)::before{ content: 'illustrator';}
+#works li:nth-child(3)::before{ content: 'aftereffcts';}
+#works li:nth-child(4)::before{ content: 'html';}
+#works li:hover::before{
+    transition: all 0.5s;
+    height: 50%;
+}
+#works li img{ width: 100%;}
+
+#about .title{
+    width: 8%;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    top: 23%;
+    color: rgb(117,208,177);
+    font-size: 33px;
+    font-family: 'Abril Fatface', cursive;
+}
+#about .detail1{
+    width: 100%;
+    height: 55vh;
+    background-color: rgb(186,231,216);
+    position: absolute;
+    top: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.detail1 .etc{
+    flex: 1 1 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.etc p , .etc span{
+    width: 100%;
+    font-size: 23px;
+    margin-left: 5%;
+    position: relative;
+    color: white;
+    /* font-weight: bold; */
+}
+.etc p:nth-of-type(1)::before{
+    position: absolute;
+    left: 1%;
+    top: 26%;
+    content: '이름';
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.etc p:nth-of-type(2)::before{
+    position: absolute;
+    left: 1%;
+    top: 26%;
+    content: '생년월일';
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.etc p:nth-of-type(3)::before{
+    position: absolute;
+    left: 1%;
+    top: 44%;
+    content: '경력사항 및 자격증';
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.etc p:nth-of-type(4)::before{
+    position: absolute;
+    left: 1%;
+    top: 26%;
+    content: '주소';
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+.etc .before{
+    position: absolute;
+    top: 24%;
+    left: 0;
+    width: 0;
+    margin-left: 0;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+#about .title2{
+    width: 8%;
+    position: absolute;
+    text-align: center;
+    right: 0;
+    bottom: 8%;
+    color: rgb(117,208,177);
+    font-size: 33px;
+    font-family: 'Abril Fatface', cursive;
+}
+#skill .last{
+    width: 100%;
+    height: 55vh;
+    background-color: rgb(186,231,216);
+    position: absolute;
+    top: 30%;
+    font-size: 150px;
+    text-align: center;
+    line-height: 450px;
+    color: white;
+    /* font-family: 'Abril Fatface', cursive; */
+    font-family: 'PT Serif', serif;
+}
+#skill .detail2{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+#skill span{
+    margin-top: 3%;
+    color: rgb(117,208,177);
+    font-size: 23px;
+    text-align: center;
+    width: 50%;
+}
+.etc span .level,
+.etc span .level2,
+.etc span .level3,
+.etc span .level4,
+.etc span .level5{
+    transition: all 0.3s;
+    width: 0;
+    height: 1vh;
+    background-color: rgb(117,208,177);
+    position: absolute;
+    left: 23%;
+    top: 36%;
+}
+.etc .level-1{
+    font-size: 20px;
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.etc span:hover .level{
+    width: 45%;
+}
+.etc span:hover .level2{
+    width: 55%;
+}
+.etc span:hover .level3{
+    width: 60%;
+}
+.etc span:hover .level4{
+    width: 70%;
+}
+.etc span:hover .level5{
+    width: 70%;
+}
+.etc span:hover .level-1{
+    display: block;
+}

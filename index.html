@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#works">Skill</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skill">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="wrap">
+        <section id="works">
+            <ul>
+                <li>
+                    <a href="javascript:;" class="works1">
+                        <img src="imges/PS_img_1.jpg" alt="img">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="works">
+                        <img src="imges/AI_img_2.jpg" alt="img">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="works2">
+                        <img src="https://cdn.pixabay.com/photo/2021/12/17/06/18/cat-6875746__340.jpg" alt="img">
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;" class="works3">
+                        <img src="imges/web_img_main.jpg" alt="img">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <section id="about">
+            <span class="title">About</span>
+            <div class="detail1">
+                <div class="etc">
+                    <p>NAME &nbsp&nbsp&nbsp&nbsp&nbsp 윤지현</p>
+                    <p>BIRTH &nbsp&nbsp&nbsp&nbsp&nbsp 1999.11.03</p>
+                    <p>EXPRIENCE<br>& CERTIFICATE &nbsp&nbsp&nbsp&nbsp&nbsp </p>
+                    <p>ADDRESS &nbsp&nbsp&nbsp&nbsp&nbsp 경기도 남양주시</p>
+                </div>
+                <div class="etc">
+                    <span>HTML
+                        <span role="dialog" class="before">COMPETENCE</span>
+                        <div class="level">
+                            <span role="dialog" class="level-1">60%</span>
+                        </div>
+                    </span>
+                    <span>PHOTOSHOP
+                        <span role="dialog" class="before">COMPETENCE</span>
+                        <div class="level2">
+                            <span role="dialog" class="level-1">75%</span>
+                        </div>
+                    </span>
+                    <span>ILLUSTRATOR
+                        <span role="dialog" class="before">COMPETENCE</span>
+                        <div class="level3">
+                            <span role="dialog" class="level-1">80%</span>
+                        </div>
+                    </span>
+                    <span>PREMIERE
+                        <span role="dialog" class="before">COMPETENCE</span>
+                        <div class="level4">
+                            <span role="dialog" class="level-1">70%</span>
+                        </div>
+                    </span>
+                    <span>AFTEREFFECTS
+                        <span role="dialog" class="before">COMPETENCE</span>
+                        <div class="level5">
+                            <span role="dialog" class="level-1">70%</span>
+                        </div>
+                    </span>
+                </div>
+            </div>
+            <span class="title2">Contact</span> 
+        </section>
+        <section id="skill">
+            <div class="detail2">
+                <span>PHONE &nbsp&nbsp&nbsp&nbsp&nbsp 010-5771-0454</span>
+                <span>E-MAIL &nbsp&nbsp&nbsp&nbsp&nbsp jjmngum333@gmail.com</span>
+            </div>
+            <div class="last">Thanks</div>
+        </section>
+    </div>
+
+    <script>
+        document.querySelector('.works1').addEventListener('click' , function(){
+            var w=window.screen.availWidth;
+            var h=window.screen.availHeight;
+            console.log(h);
+            window.open('pt2/index.html#1tag' , 'html' , 'toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=0,width='+w+',height='+h+'');
+        });
+
+        document.querySelector('.works').addEventListener('click' , function(){
+            var w=window.screen.availWidth;
+            var h=window.screen.availHeight;
+            console.log(h);
+            window.open('pt2/index.html#1tag' , 'html' , 'toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=0,width='+w+',height='+h+'')
+        });
+
+        document.querySelector('.works2').addEventListener('click' , function(){
+            var w=window.screen.availWidth;
+            var h=window.screen.availHeight;
+            console.log(h);
+            window.open('pt2/index.html#2tag' , 'html' , 'toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=0,width='+w+',height='+h+'');
+        });
+
+        document.querySelector('.works3').addEventListener('click' , function(){
+            var w=window.screen.availWidth;
+            var h=window.screen.availHeight;
+            console.log(h);
+            window.open('pt2/index.html#3tag' , 'html' , 'toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=0,width='+w+',height='+h+'');
+        });
+    </script>
+</body>
+</html>
